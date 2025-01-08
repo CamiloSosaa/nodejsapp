@@ -16,7 +16,7 @@ job('Aplicacion Node.js Docker DSL') {
         dockerBuildAndPublish {
             repositoryName('CamiloSosaa/nodejsapp')
             tag('${GIT_REVISION,length=7}')
-            registryCredentials('slack-jenkins')
+            registryCredentials('github-credentials-id')
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
